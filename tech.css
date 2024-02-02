@@ -1,0 +1,61 @@
+body {
+    background-image: url(event.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+}
+h1{
+    font-size:55px;
+}
+header, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.event {
+    background-color: #070606;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.event:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.event-details p {
+    margin-bottom: 5px;
+}
+
+.register-btn {
+    background-color: #00f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.register-btn:hover {
+    background-color: #0099ff;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .event-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventrix 2024 - Digiverse</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="logo.png">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+   
+</head>
+<style>
+    table a{
+        text-decoration:none;
+        color:white;
+    }
+</style>
+<body id="inventrix">
+
+  <div id="logo-animation">
+    <img src="logo.png" alt="Inventrix Logo">
+  </div>
+  <div id="landing-page" style="display: none;">
+    <header>
+     <nav>
+        <a href="logo.png" id="logo">INVENTRIX</a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="#home">HOME</a>
+          </li>
+          <li>
+            <a href="#theme">THEME</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT US</a>
+          </li>
+          
+          <li>
+            <a href="event1.html">EVENTS</a>
+          </li>
+          <li>
+            <a href="schedule.html">SCHEDULE</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+</nav>
+      </header>
+      <section id="home" >
+        <div id="main">
+        <h2 style="margin-top: 20%;text-align:center; font-size:10px;">V.G. Vaze College of Arts, Science and Commerce (Autonomous).
+          Department of IT Presents</h2><br>
+        <h1> INVENTRIX</h1>
+        <p style="font-size:10px; padding-left:15vw;">Make it happen...</p>
+        <table style="border: 2px solid rgb(126, 101, 38) ;padding: 3%; margin: 3%;">
+          <tr>
+            <td><a href="event1.html#events1">Monday, January 29 2024</a></td>
+            <td rowspan="2">Information Technology Lab</td>
+          </tr>
+          <tr>
+            <td><a href="event1.html#events">Tuesday, January 30 2024</a></td>
+            
+          </tr>
+        </table>
+          </div>
+          </section>
+          <section id="theme" class="theme-vision" style="padding-top:10%; padding-bottom: 10%; margin-top:5%;">
+            <div class="container">
+              <h1 style="font-size:35px;">Theme: Digiverse</h1>
+              <p style="font-size:medium;">Welcome to a world where imagination meets innovation, and technology shapes reality. This is Digiverse, where the possibilities are limitless.</p>
+             <br><br>
+              <div class="theme-vision-content">
+                <div class="theme-image">
+                  <img src="theme.jpeg" alt="Digiverse Cityscape">
+                </div>
+                
+              </div>
+          
+             
+            </div>
+          </section>
+
+          <section id="about" class="about-us">
+            <div class="container">
+              <h1>About Inventrix</h1>
+              <p style="width:95vw; padding:10px;">Inventrix is the annual IT department event at V.G. Vaze College of Arts, Science and Commerce (Autonomous), bringing together the brightest minds and most innovative spirits to showcase their talent, ideas, and creations.</p>
+          
+              <div class="about-content">
+                <div class="about-image">
+                  <img src="about.jpeg" alt="Inventrix Team" style="width:95vw; padding:10px;">
+                </div>
+            
+                <div class="about-text">
+                 
+                  
+                  
+                </div>
+               
+              </div>
+               <p style="width:95vw; padding:10px;">It's a virtual wonderland where coding challenges and epic games collide! It's a fantastic blend of coding challenges and fun games that will leave you buzzing with excitement! </p>
+              <p style="width:95vw; padding:10px;">It lets the IT nerds  showcase their programming skills, and all the gaming enthusiasts get to experience a whole lot of enjoyment with a variety of thrilling games. Whether you're a coding enthusiast or just love having a great time, Inventrix is the place to be. Join us for an unforgettable experience where technology and fun collide! 🎮💻🎉.</p>
+            </div>
+          </section>
+          
+         
+          
+          <footer class="p-4 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800"
+    style="background-color:black;text-decoration: none;">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/"
+            class="hover:underline" style="text-decoration: none;">Inventrix™</a>. All Rights Reserved.
+    </span>
+</footer>
+</div>
+  
+    
+  <script >
+      window.addEventListener('load', () => {
+    const logoAnimation = document.getElementById('logo-animation');
+    const landingPage = document.getElementById('landing-page');
+    const main=document.getElementById('inventrix');
+  
+    setTimeout(() => {
+      logoAnimation.style.display = 'none';
+      landingPage.style.display = 'block';
+      main.style.backgroundImage = "none";
+     
+    },200); // Adjust delay to match animation duration
+  });
+  
+let hamMenuIcon = document.getElementById("ham-menu");
+let navBar = document.getElementById("nav-bar");
+let navLinks = navBar.querySelectorAll("li");
+
+hamMenuIcon.addEventListener("click", () => {
+  navBar.classList.toggle("active");
+  hamMenuIcon.classList.toggle("fa-times");
+});
+navLinks.forEach((navLinks) => {
+  navLinks.addEventListener("click", () => {
+    navBar.classList.remove("active");
+    hamMenuIcon.classList.toggle("fa-times");
+  });
+});
+  </script>
+</body>
+</html>

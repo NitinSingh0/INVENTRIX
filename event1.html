@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventrix Events</title>
+<link rel="stylesheet" href="event.css">
+<link rel="stylesheet" href="partials/nav.css">
+<link rel="shortcut icon" href="logo.png">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+<body>
+    <style>
+        .animated-heading a{
+            text-decoration: none;
+            color:blue;
+            text-shadow:white 2px 2px;
+           
+        }
+        
+         @media (min-width: 1068px) {
+  .day-container {
+    flex-direction: row; /* Arrange elements side-by-side on larger screens */
+    }
+    
+    
+    
+     nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header{
+      padding: 1rem 1rem !important;
+  }
+  #schedule {
+    padding-top: 18vh !important;
+}
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  nav a {
+    font-size:45px;
+    text-decoration: none;
+  }
+  nav a#logo {
+    color: #000000;
+    font-weight: 700;
+  }
+  nav ul a {
+    color: #ffffff;
+    font-weight: 600;
+  }
+  nav ul a:hover {
+    border-bottom: 2px solid #ffffff;
+  }
+    
+    
+    
+    body {
+    font-size: 35px;/* Adjust base font size */
+      
+      
+  }
+  li a{
+      font-size:20px !important;
+    }
+    
+   
+   h1 { 
+       
+       text-shadow:blue 2px 2px;
+       padding-top:4vh;
+       
+   } /* Reduce heading size on mobile */
+ 
+  .day-container {
+    padding: 10px; /* Reduce padding */
+  }
+ 
+ }
+        
+    </style>
+    <header>
+        <nav>
+        <a href="logo.png" id="logo">INVENTRIX</a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="index.html#home">HOME</a>
+          </li>
+          <li>
+            <a href="index.html#theme">THEME</a>
+          </li>
+          <li>
+            <a href="index.html#about">ABOUT US</a>
+          </li>
+          
+          <li>
+            <a href="event1.html">EVENTS</a>
+          </li>
+          <li>
+            <a href="schedule.html">SCHEDULE</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+</nav>
+    </header>
+    <script>
+            let hamMenuIcon = document.getElementById("ham-menu");
+let navBar = document.getElementById("nav-bar");
+let navLinks = navBar.querySelectorAll("li");
+
+hamMenuIcon.addEventListener("click", () => {
+  navBar.classList.toggle("active");
+  hamMenuIcon.classList.toggle("fa-times");
+});
+navLinks.forEach((navLinks) => {
+  navLinks.addEventListener("click", () => {
+    navBar.classList.remove("active");
+    hamMenuIcon.classList.toggle("fa-times");
+  });
+});
+    </script>
+    <div id="main_event" style="padding-top:60px">
+  <div style="color: white;">
+    <h1 class="animated-title" style="font-size: 45px;text-align: center;">Events</h1>
+    <p class="animated-text">Explore the exciting events that await you at Inventrix!</p>
+  </div>
+
+<section class="events" id="events1">
+  
+  <div class="container">
+    <div class="event-category technical-events animated-section">
+      <h2 class="animated-heading" style="text-align: center; font-size: 35px;"><a href="tech.html">Alpha Sessions</a></h2>
+      <div class="event-cards">
+        <div class="event-card">
+          <img src="source/blackbox.jpeg" alt="Coding Competition">
+          <h3>Black Box</h3>
+          <p>Showcase your coding power and compete against the best!</p>
+          <div class="event-buttons">
+            <a href="registration/blackbox.php" class="register-button">Register</a>
+            <a href="tech.html#blackbox" class="details-button">Details</a>
+          </div>
+        </div>
+        <div class="event-card">
+            <img src="source/click.jpeg" alt="Coding Competition">
+            <h3>Click click</h3>
+            <p>Capture the moment in a flash with Click Click Game – where your sharp eye and quick reflexes snap up the win!</p>
+            <div class="event-buttons">
+              <a href="registration/close.html" class="register-button">Register</a>
+              <a href="tech.html#click" class="details-button">Details</a>
+            </div>
+          </div>
+        
+        <div class="event-card">
+            <img src="source/fifa.jpeg" alt="App Development Challenge">
+            <h3>FIFA'24</h3>
+            <p>Unleash your football fantasy in FIFA 24, where every kick brings you closer to glory on the world's ultimate digital pitch!</p>
+            <div class="event-buttons">
+              <a href="registration/fifa.php" class="register-button">Register</a>
+              <a href="tech.html#fifa" class="details-button">Details</a>
+            </div>
+          </div>
+          <div class="event-card">
+            <img src="source/bgmi.jpeg" alt="Hackathon">
+            <h3>BGMI</h3>
+            <p>Drop in, gear up, and outlast them all in BGMI – where every match is a battle for survival and supremacy!</p>
+            <div class="event-buttons">
+              <a href="registration/close.html" class="register-button">Register</a>
+              <a href="tech.html#bgmi" class="details-button">Details</a>
+            </div>
+          </div>
+          
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="events" id="events" style="margin-top: 10%;">
+  
+  <div class="container">
+    
+
+    <div class="event-category technical-events animated-section">
+     
+      
+
+    <div class="event-category non-technical-events animated-section">
+      <h2 class="animated-heading" style="text-align: center; font-size: 35px; text-decoration: none;"><a href="non-tech.html">Beta Sessions</a> </h2>
+      <div class="event-cards">
+        <div class="event-card">
+          <img src="source/blackbox.jpeg" alt="Tech Quiz">
+          <h3>Black Box finale</h3>
+          <p>Unravel the code to victory in the Black Box Finale – where sharp minds debug, decipher, and dominate!</p>
+          <div class="event-buttons">
+            <a href="registration/blackbox.php" class="register-button">Register</a>
+            <a href="non-tech.html#blackbox" class="details-button">Details</a>
+          </div>
+        </div>
+        <div class="event-card">
+            <img src="source/stumble.jpeg" alt="Gaming Tournament">
+            <h3>Stumble guys</h3>
+            <p>Dive into the uproarious world of Stumble Guys – where every tumble is a step closer to becoming the champion of chaos and comedy!</p>
+            <div class="event-buttons">
+              <a href="registration/stumple.php" class="register-button">Register</a>
+              <a href="non-tech.html#stumble" class="details-button">Details</a>
+            </div>
+          </div>
+          <div class="event-card">
+            <img src="source/tresurehunt.jpeg" alt="Tech Art Exhibition">
+            <h3>Treasure hunt</h3>
+            <p>Embark on a quest in the Treasure Hunt game, where clues lead to secrets and every discovery brings you closer to untold riches!</p>
+            <div class="event-buttons">
+              <a href="registration/treasurehunt.php" class="register-button">Register</a>
+              <a href="non-tech.html#tresure" class="details-button">Details</a>
+            </div>
+          </div>
+          
+         
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<script>
+    // Add GSAP animations for elements with "animated-" classes
+    gsap.from('.animated-title', { y: 100, opacity: 0, duration: 1, stagger: 0.2 });
+    gsap.from('.animated-text', { x: -100, opacity: 0, duration: 1, stagger: 0.3 });
+    gsap.from('.animated-section', { opacity: 0, duration: 1, stagger: 0.4 });
+    gsap.from('.event-card', { y: 50, opacity: 0, duration: 1, stagger: 0.4 });
+    
+
+  </script>
+
+</div>
+</body>
+</html>

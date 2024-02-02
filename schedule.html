@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Schedule</title>
+<link rel="shortcut icon" href="logo.png">
+<link rel="stylesheet" href="partials/nav.css">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+<body>
+    <style>
+    body {
+        font-family: sans-serif;
+        background-color: #000;
+        color: #fff; 
+        text-align: center;
+      }
+      
+      h1, h2 {
+        font-weight: bold;
+        color: #33f; 
+      }
+      
+      table {
+        border-collapse: collapse;
+        margin: 20px auto;
+        width: 80%;
+      }
+      
+      th, td {
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      
+      /* Animations */
+      .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+      
+      @keyframes slideInDown {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .day-container {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+      }
+@media (max-width: 480px) {
+  body {
+    font-size: 34px; 
+  }
+  .day-container {
+    padding: 5px;
+  }
+ }
+   
+ @media (max-width: 1068px) {
+  /* Styles for mobile screens */
+  body {
+    font-size: 5rem;/* Adjust base font size */
+      
+      
+  }
+  li a{
+      font-size:5rem !important;
+    }
+    
+    nav a#logo,
+    #ham-menu {
+      font-size: 5.2rem !important;
+    }
+   h1 { 
+       font-size: 10rem; 
+       text-shadow:white 2px 2px;
+       padding-top:6vh;
+       
+   } /* Reduce heading size on mobile */
+  h2 {
+      font-size: 7rem;
+      text-shadow:white 2px 2px;
+      }
+  .day-container {
+    padding: 10px; /* Reduce padding */
+  }
+  .day-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on mobile */
+ }
+
+  nav ul {
+      top: 115.18px !important;
+      height: calc(100vh - 195.18px) !important;
+    }
+ }
+ @media (min-width: 1068px) {
+  .day-container {
+    flex-direction: row; /* Arrange elements side-by-side on larger screens */
+    }
+    
+    
+    
+     nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header{
+      padding: 2rem 2rem !important;
+  }
+  #schedule {
+    padding-top: 18vh !important;
+}
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  nav a {
+   
+    text-decoration: none;
+  }
+  nav a#logo {
+    color: #000000;
+    font-weight: 700;
+  }
+  nav ul a {
+    color: #ffffff;
+    font-weight: 600;
+  }
+  nav ul a:hover {
+    border-bottom: 2px solid #ffffff;
+  }
+    
+    
+    
+    body {
+    font-size: 35px;/* Adjust base font size */
+      
+      
+  }
+  li a{
+      font-size:20px !important;
+    }
+    
+   
+   h1 { 
+       font-size: 40px; 
+       text-shadow:white 2px 2px;
+       padding-top:2vh;
+       
+   } /* Reduce heading size on mobile */
+  h2 {
+      font-size: 35px;
+      text-shadow:white 2px 2px;
+      }
+  .day-container {
+    padding: 10px; /* Reduce padding */
+  }
+ 
+ }
+
+  
+    .event-table th {
+        background-color: #33f;
+        color: #fff;
+      }
+</style>
+    <header >
+        <nav >
+        <a href="logo.png" id="logo" >INVENTRIX</a>
+        <i class="fas fa-bars" id="ham-menu" style="font-size:35px;"></i>
+        <ul id="nav-bar" style="font-size:2px;">
+          <li>
+            <a href="index.html#home">HOME</a>
+          </li>
+          <li>
+            <a href="index.html#theme">THEME</a>
+          </li>
+          <li>
+            <a href="index.html#about">ABOUT US</a>
+          </li>
+          
+          <li>
+            <a href="event1.html">EVENTS</a>
+          </li>
+          <li>
+            <a href="schedule.html">SCHEDULE</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+</nav>
+    </header>
+    <script>
+            let hamMenuIcon = document.getElementById("ham-menu");
+let navBar = document.getElementById("nav-bar");
+let navLinks = navBar.querySelectorAll("li");
+
+hamMenuIcon.addEventListener("click", () => {
+  navBar.classList.toggle("active");
+  hamMenuIcon.classList.toggle("fa-times");
+});
+navLinks.forEach((navLinks) => {
+  navLinks.addEventListener("click", () => {
+    navBar.classList.remove("active");
+    hamMenuIcon.classList.toggle("fa-times");
+  });
+});</script>
+  <h1 class="animated slideInDown" id="schedule" style="padding-top:vh !important;">Event Schedule</h1>
+
+  <section class="day-container animated fadeIn">
+    <h2 class="day-title">Alpha Session</h2>
+    <table class="event-table">
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Time</th>
+          <th>Venue</th>
+        </tr>
+      </thead>
+      <tbody>
+          
+          <tr>
+          <td>Inaugration</td>
+          <td>8:30 AM - 9:00 AM</td>
+          <td>IT lab</td>
+        </tr>
+        <tr>
+          <td>Black Box</td>
+          <td>9:00 AM - 11:00 AM</td>
+          <td>IT lab</td>
+        </tr>
+        <tr>
+          <td>Click click</td>
+          <td>11:30 AM </td>
+          <td>Room no. 08</td>
+        </tr>
+        <tr>
+          <td>FIFA'24</td>
+          <td>12:30 PM</td>
+          <td>Room no. 401</td>
+        </tr>
+        <tr>
+          <td>BGMI</td>
+          <td>12:30 PM</td>
+          <td>Room no. 401</td>
+        </tr>
+        
+        
+        </tbody>
+    </table>
+  </section>
+
+  <section class="day-container animated fadeIn">
+    <h2 class="day-title">Beta Session</h2>
+    <table class="event-table">
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Time</th>
+          <th>Venue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Black Box Finale</td>
+          <td>8:30 AM</td>
+          <td>IT Lab</td>
+        </tr>
+        <tr>
+          <td>Stumble guys</td>
+          <td>9:30 AM</td>
+          <td>IT Lab</td>
+        </tr>
+        <tr>
+          <td>Treasure hunt</td>
+          <td>11:00 AM </td>
+          <td>Room no. 08</td>
+        </tr>
+        </tbody>
+    </table>
+  </section>
+
+  <script>window.onload = function() {
+    const animatedElements = document.querySelectorAll('.animated');
+    animatedElements.forEach(element => element.classList.add('animate'));
+  };
+  
+  // Add interactive effects (example)
+  const dayContainers = document.querySelectorAll('.day-container');
+  dayContainers.forEach(container => {
+    container.addEventListener('mouseover', () => {
+      container.style.boxShadow = '0px 0px 10px rgba(0, 255, 255, 0.5)';
+    });
+    container.addEventListener('mouseout', () => {
+      container.style.boxShadow = 'none';
+    });
+  });</script>
+</body>
+</html>

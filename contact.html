@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inventrix Contact</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="partials/nav.css">
+<link rel="shortcut icon" href="logo.png">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+ 
+</head>
+<body>
+<style>
+    /* General styling */
+    body {
+        font-family: sans-serif;
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2 {
+        font-weight: bold;
+        color: #33f;
+        text-align: center;
+    }
+
+    /* Digital Universe Theme */
+    .contact-info ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .contact-info li {
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    .contact-info a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact-form {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 20px auto;
+        max-width: 600px;
+    }
+
+    .contact-info li {
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .contact-info li:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Animated text glow */
+    /*.glow-text {*/
+    /*    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);*/
+    /*    animation: glow 1s ease-in-out infinite alternate;*/
+    /*}*/
+
+    @keyframes glow {
+        from { text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); }
+        to { text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); }
+    }
+
+    /* Animated form elements */
+    .form-group input,
+    .form-group textarea {
+        animation: pulse 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulse {
+        from { box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2); }
+        to { box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5); }
+    }
+
+    /* Form styling */
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #ccc;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #fff;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    button[type="submit"] {
+        background-color: #33f;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size:2rem;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #22e;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 1068px) {
+        .contact-info ul {
+            flex-direction: column;
+        }
+        button[type="submit"] {
+            font-size:5rem;
+        }
+
+        .contact-info li,
+        .contact-form {
+            width: 100%; /* Adjust width for mobile devices */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1, h2 {
+            font-size: 8rem; /* Adjust heading sizes for smaller screens */
+            text-shadow:white 2px 2px;
+        }
+         nav ul {
+      top: 115.18px !important;
+      height: calc(100vh - 195.18px) !important;
+    }
+ 
+
+        .form-group input,
+        .form-group textarea {
+            font-size: 5rem; /* Adjust font size for form inputs */
+        }
+        .form-group{
+            width:100%;
+           
+        }
+        .contact-info li{
+            padding:30px;
+        }
+        .contact-info ul {
+            font-size:1.5rem;
+            
+             padding: 30px;
+        border-radius: 10px;
+        margin: 20px;
+        max-width: 95vw;
+       
+        }
+         .contact-form {
+        padding: 30px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 20px;
+        max-width: 95vw;
+        font-size:6rem;
+        
+    }
+    li a{
+        font-size:4rem;
+        
+    }
+
+    }
+     @media (min-width: 1068px) {
+  .day-container {
+    flex-direction: row; /* Arrange elements side-by-side on larger screens */
+    }
+    
+    
+    
+     nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header{
+      padding: 1rem 1rem !important;
+  }
+  #schedule {
+    padding-top: 18vh !important;
+}
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  nav a {
+    font-size:45px;
+    text-decoration: none;
+  }
+  nav a#logo {
+    color: #000000;
+    font-weight: 700;
+  }
+  nav ul a {
+    color: #ffffff;
+    font-weight: 600;
+  }
+  nav ul a:hover {
+    border-bottom: 2px solid #ffffff;
+  }
+    
+    
+    
+    body {
+    font-size: 35px;/* Adjust base font size */
+      
+      
+  }
+  li a{
+      font-size:20px !important;
+    }
+    
+   
+   h1 { 
+       font-size: 40px; 
+       text-shadow:white 2px 2px;
+       padding-top:2vh;
+       
+   } /* Reduce heading size on mobile */
+  h2 {
+      font-size: 35px;
+      text-shadow:white 2px 2px;
+      }
+  .day-container {
+    padding: 10px; /* Reduce padding */
+  }
+ 
+ }
+</style>
+      <header >
+        <nav >
+        <a href="logo.png" id="logo">INVENTRIX</a>
+        <i class="fas fa-bars" id="ham-menu" ></i>
+        <ul id="nav-bar" >
+          <li>
+            <a href="index.html#home">HOME</a>
+          </li>
+          <li>
+            <a href="index.html#theme">THEME</a>
+          </li>
+          <li>
+            <a href="index.html#about">ABOUT US</a>
+          </li>
+          
+          <li>
+            <a href="event1.html">EVENTS</a>
+          </li>
+          <li>
+            <a href="schedule.html">SCHEDULE</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+</nav>
+    </header>
+    <script>
+            let hamMenuIcon = document.getElementById("ham-menu");
+let navBar = document.getElementById("nav-bar");
+let navLinks = navBar.querySelectorAll("li");
+
+hamMenuIcon.addEventListener("click", () => {
+  navBar.classList.toggle("active");
+  hamMenuIcon.classList.toggle("fa-times");
+});
+navLinks.forEach((navLinks) => {
+  navLinks.addEventListener("click", () => {
+    navBar.classList.remove("active");
+    hamMenuIcon.classList.toggle("fa-times");
+  });
+});</script>
+
+  <main class="animated fadeIn">
+    <h1 style="padding-top:6vh;">Connect with Inventrix</h1>
+
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <ul>
+        <li><a href="#"><i class="fa fa-phone blue-color"></i> +900-548-5337</a></li>
+        <li><a href = "mailto: itinventrix@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> itinventrix@gmail.com</a></li>
+        <!-- <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li> -->
+        <li><a href="https://www.instagram.com/inventrix.makeithappen?igsh=c3E1MGFxcGFqNXF3"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        <li><a href="https://maps.app.goo.gl/8JbUkTny8R36CNGEA"><i class="fa fa-map-marker" aria-hidden="true"> </i> Mithaghar Rd jaihind Colony,Mulund East,Mumbai Maharashtra 400081</a></li>
+      </ul>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contact-form" action="contact.php" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="your name.." required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="eg suggestions/feedback/..." required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    </footer>
+
+  <script >
+
+  window.onload = function() {
+  const animatedElements = document.querySelectorAll('.animated');
+  animatedElements.forEach(element => element.classList.add('animate'));
+
+  // Add glowing text effect
+  const headings = document.querySelectorAll('h1, h2');
+  headings.forEach(heading => heading.classList.add('glow-text'));
+};
+  </script>
+</body>
+</html>

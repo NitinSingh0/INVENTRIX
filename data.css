@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    background-color:rgb(36, 43, 109);
+    color:white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow:10px 10px white;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input,input:focus :after{
+    outline:none;
+        font-size:2rem;
+        width:75vw;
+        background-color:rgb(36, 43, 109);
+        border:none;
+        border-bottom:4px solid white;
+    }
+    select{
+        font-size:2rem;
+        width:75vw;
+        background-color:rgb(36, 43, 109);
+        border:none;
+        border-bottom:4px solid white;
+        
+    }
+    select option{
+        color:white;
+    }
+    button{
+        font-size:3rem;
+        text-align:center;
+    }
+     h1{
+        font-size:4rem;
+    }
+
+/* Responsive styles for smaller screens */
+@media (max-width: 1068px) {
+    form {
+        width: 95%;
+        font-size:2rem;
+        overflow:hidden;
+    }
+   
+    select,input{
+        width:80vw;
+    }
+}
+
+@media (max-width: 480px) {
+    label {
+        display: inline-block;
+        width: 80px;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    input, select {
+        width: calc(100% - 90px); /* Adjust for label width */
+    }
+}

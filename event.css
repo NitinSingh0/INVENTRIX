@@ -1,0 +1,104 @@
+.events {
+  padding: 10px;
+  background-image: url(giphy1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  justify-content: center;
+  text-align: center;
+  color:white;
+ 
+}
+
+.event-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.event-categories h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.event-card {
+   width: 30%; 
+  margin-bottom: 30px;
+}
+
+.event-card img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  aspect-ratio:3/2;
+}
+
+.event-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.event-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.event-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.register-button,
+.details-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.details-button {
+  background-color: #5cb85c;
+}
+@media (max-width: 768px) {
+  .event-categories {
+    flex-direction: column;
+  }
+
+  .event-cards {
+    width: 100%;
+  }
+
+  .event-card {
+    margin-bottom: 20px;
+    width:100%;
+  }
+}
+
+/* Add animations and visual enhancements */
+.event-card:hover {
+  box-shadow: 1 15px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Add subtle background animations */
+body {
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
